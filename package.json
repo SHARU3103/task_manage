@@ -1,0 +1,23 @@
+{
+  "name": "employee-task-management-system",
+  "version": "1.0.0",
+  "description": "Employee & Task Management System - MERN Stack Developer Practical Task",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "cd backend && npm start",
+    "seed": "cd backend && npm run seed",
+    "test": "cd backend && npm test",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs",
+    "tailwind"
+  ],
+  "author": "Roots Media Marketing Candidate",
+  "license": "MIT"
+}
