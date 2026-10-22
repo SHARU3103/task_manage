@@ -131,9 +131,9 @@ CLIENT_URL=http://localhost:5173
 ```
 
 ### Frontend `.env`
-Default proxy forwards `/api` requests to `http://localhost:5000`. In production, set `VITE_API_URL` to your backend URL:
+In development, the Vite proxy forwards `/api` requests to `http://localhost:5000`. Production builds use `https://task-manage-0mgg.onrender.com/api` from `frontend/.env.production` by default. To use a different backend, set `VITE_API_URL` to its `/api` URL:
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://task-manage-0mgg.onrender.com/api
 ```
 
 ---
@@ -368,4 +368,4 @@ Test Suite Summary: 20 Passed, 0 Failed
 1. In Vercel or Netlify, create a new project pointing to the `frontend` directory.
 2. Build command: `npm run build`
 3. Output directory: `dist`
-4. Set environment variable: `VITE_API_URL=https://your-backend-service.onrender.com/api`.
+4. The production build uses `https://task-manage-0mgg.onrender.com/api` by default. If you use another backend, set `VITE_API_URL` in your frontend hosting settings to that backend's `/api` URL.
